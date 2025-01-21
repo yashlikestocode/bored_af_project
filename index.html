@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="whole">
+    <div class="card">
+        <div class="search">
+            <input class="city-input"  type="text" placeholder="Enter city name" spellcheck="false" onkeydown="if(event.key==='Enter'){weather_data()};">
+            <button class="magnifying-glass" onclick="weather_data();">
+                <img src="images/search-icon-front-side-white-background.png" alt="Search Icon">
+            </button>  
+        </div>
+    
+        <div class="weather"> 
+            <img src="images/clouds.png" class="weather-icon" alt="Clouds Icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+        </div>
+        
+        <div class="details">
+            <div class="col">
+                <img src="images/humidity.png" alt="Humidity Icon">
+                <p>Humidity</p>
+                <p class="humidity">50%</p>
+            </div>
+            <div class="col">
+                <img src="images/wind.png" alt="Wind Speed Icon">
+                <p>Wind Speed</p>
+                <p class="wind">15 km/h</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- //"if(event.key==='Enter'){weather_data(); -->
