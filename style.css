@@ -103,3 +103,6 @@
 {
     background:linear-gradient(#264653,#2a9d8f,#e9c46a);
 }
+*{
+    background-repeat: no-repeat;
+}
