@@ -1,3 +1,60 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.whole {
+    background: linear-gradient(#264653, #2a9d8f, #e9c46a);
+    background-size: cover;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 50px 35px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for better depth */
+}
+
+/* Search input */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 0px 48px;
+    height: 60px;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    margin-right: 10px;
+}
+
 .magnifying-glass {
     background: transparent;
     border: none;
@@ -17,41 +74,7 @@
     opacity: 1; /* Make the icon fully opaque on hover */
 }
 
-.card {
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 50px 35px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for better depth */
-}
-
-.search {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.search input {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 0px 48px;
-    height: 60px;
-    border-radius: 30px;
-    /* flex: 1; */
-    width:100%;
-    margin-right: 16px;
-    font-size: 18px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-
+/* Weather display */
 .weather-icon {
     width: 120px;
     margin-top: 30px;
@@ -71,6 +94,7 @@
     color: rgba(255, 255, 255, 0.8); /* Slightly lighter text for the city */
 }
 
+/* Details section */
 .details {
     display: flex;
     align-items: center;
@@ -89,20 +113,3 @@
     gap: 5px;
 }
 
-.col img {
-    width: 40px;
-    margin-bottom: 10px; /* Adjust spacing between icon and text */
-}
-
-.humidity, .wind {
-    font-size: 24px;
-    margin: 0;
-    font-weight: 500;
-}
-.whole
-{
-    background:linear-gradient(#264653,#2a9d8f,#e9c46a);
-}
-*{
-    background-repeat: no-repeat;
-}
